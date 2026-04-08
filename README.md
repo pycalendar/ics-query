@@ -451,6 +451,13 @@ follow these steps:
 
 5. Notify the issues about their release
 
+To add a new Python version, update these files:
+
+- `tox.ini` - add the version to `envlist`
+- `pyproject.toml` - add a classifier
+- `.github/workflows/tests.yml` - add the version to the `run-tests` and `test-version` matrices
+- `README.md` - add a changelog entry
+
 ## Changelog
 
 We automatically release the versions that only update dependencies.
