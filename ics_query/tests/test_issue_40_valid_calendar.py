@@ -17,7 +17,7 @@ if TYPE_CHECKING:
     from ics_query.tests.conftest import ExampleRun
 
 
-@pytest.fixture()
+@pytest.fixture
 def calendar(run) -> ExampleRun:
     """Return a calendar that is wrapped around the event."""
     return run("first", "--as-calendar", "one-event-without-timezone.ics").calendar

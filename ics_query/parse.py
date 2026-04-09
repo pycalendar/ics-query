@@ -84,4 +84,4 @@ def to_time_and_delta(dt: str) -> DateAndDelta:
     return datetime.timedelta(**kw)
 
 
-__all__ = ["to_time", "Date", "to_time_and_delta", "DateAndDelta"]
+__all__ = ["Date", "DateAndDelta", "to_time", "to_time_and_delta"]
