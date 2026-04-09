@@ -18,7 +18,7 @@
 from __future__ import annotations
 
 import functools
-import os  # noqa: TCH003
+import os  # noqa: TC003
 import sys
 import typing as t
 import zoneinfo
@@ -788,4 +788,4 @@ def main():
     cli(auto_envvar_prefix=ENV_PREFIX)
 
 
-__all__ = ["main", "ENV_PREFIX", "cli"]
+__all__ = ["ENV_PREFIX", "cli", "main"]

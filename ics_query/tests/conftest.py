@@ -120,7 +120,7 @@ def io_testcase(request: pytest.FixtureRequest) -> IOTestCase:
     return IOTestCase.from_path(path, binary)
 
 
-@pytest.fixture()
+@pytest.fixture
 def run(request: pytest.FixtureRequest) -> Callable[..., ExampleRun]:
     """Return a runner function."""
 
@@ -131,4 +131,4 @@ def run(request: pytest.FixtureRequest) -> Callable[..., ExampleRun]:
     return run
 
 
-__all__ = ["IOTestCase", "ExampleRun"]
+__all__ = ["ExampleRun", "IOTestCase"]
