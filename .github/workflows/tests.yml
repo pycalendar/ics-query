@@ -92,6 +92,7 @@ jobs:
         - ["3.12",  "py312", "ubuntu-latest"]
         - ["3.9",  "ruff", "ubuntu-latest"]
         - ["3.11",  "exe", "windows-latest"]
+        - ["3.11",  "exe", "ubuntu-latest"]
 
     runs-on: ${{ matrix.config[2] }}
     name: release-${{ matrix.config[1] }}
@@ -114,7 +115,7 @@ jobs:
     - name: Test
       run: |
         tox -e ${{ matrix.config[1] }}
-    - uses: actions/upload-artifact@v7
+    - uses: actions/upload-artifact@v8
       with:
         name: dist-${{ matrix.config[1] }}-${{ matrix.config[2] }}  # dist-exe-windows-latest
         path: dist
@@ -203,5 +204,5 @@ jobs:
           allowUpdates: true
           body: "For a list of changes, please refer to the [Changelog](https://github.com/niccokunzmann/ics-query#changelog)."
           generateReleaseNotes: false
-          artifacts: "dist/dist-exe-windows-latest/ics-query.exe"
+          artifacts: "dist/dist-exe-windows-latest/ics-query.exe,dist/dist-exe-ubuntu-latest/ics-query"
           tag: ${{ needs.version.outputs.version }}
