@@ -464,7 +464,7 @@ We automatically release the versions that only update dependencies.
 If the version you installed does not show up here, only the dependencies
 have been updated.
 
-- v0.4.58
+- v0.5.0
 
   - Remove Python 3.9 support.
 
