@@ -120,7 +120,7 @@ jobs:
     - name: Test
       run: |
         tox -e ${{ matrix.config[1] }}
-    - uses: actions/upload-artifact@v8
+    - uses: actions/upload-artifact@v6
       with:
         name: dist-${{ matrix.config[1] }}-${{ matrix.config[2] }}  # dist-exe-windows-latest
         path: dist
