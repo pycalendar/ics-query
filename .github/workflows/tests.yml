@@ -48,6 +48,8 @@ jobs:
     name: "Determine a new version"
     if: ${{ startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     outputs:
       # see https://docs.github.com/de/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#example-usage-of-the-jobs-context
       version: ${{ steps.version.outputs.version }}
