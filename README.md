@@ -464,6 +464,10 @@ We automatically release the versions that only update dependencies.
 If the version you installed does not show up here, only the dependencies
 have been updated.
 
+- v0.4.58
+
+  - Remove Python 3.9 support.
+
 - v0.4.54
 
   - Test and support Python 3.13 and 3.14. See [Issue 9](https://github.com/niccokunzmann/ics-query/issues/9).

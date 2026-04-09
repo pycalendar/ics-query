@@ -17,13 +17,13 @@ jobs:
         config:
         # also add to test-version
         # [Python version, tox env, OS]
-        - ["3.9",   "py39", "ubuntu-latest"]
         - ["3.10",  "py310", "ubuntu-latest"]
         - ["3.11",  "py311", "ubuntu-latest"]
         - ["3.12",  "py312", "ubuntu-latest"]
         - ["3.13",  "py313", "ubuntu-latest"]
         - ["3.14",  "py314", "ubuntu-latest"]
-        - ["3.9",  "ruff", "ubuntu-latest"]
+        # ruff should always run with the minimal version
+        - ["3.10",  "ruff", "ubuntu-latest"]
         # - ["3.11",  "exe", "windows-latest"]
 
     runs-on: ${{ matrix.config[2] }}
@@ -89,13 +89,13 @@ jobs:
       matrix:
         config:
         # [Python version, tox env, OS]
-        - ["3.9",   "py39", "ubuntu-latest"]
         - ["3.10",  "py310", "ubuntu-latest"]
         - ["3.11",  "py311", "ubuntu-latest"]
         - ["3.12",  "py312", "ubuntu-latest"]
         - ["3.13",  "py313", "ubuntu-latest"]
         - ["3.14",  "py314", "ubuntu-latest"]
-        - ["3.9",  "ruff", "ubuntu-latest"]
+        # ruff should always run with the minimal version
+        - ["3.10",  "ruff", "ubuntu-latest"]
         - ["3.11",  "exe", "windows-latest"]
         - ["3.11",  "exe", "ubuntu-latest"]
 
