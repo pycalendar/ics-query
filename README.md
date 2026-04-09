@@ -451,11 +451,22 @@ follow these steps:
 
 5. Notify the issues about their release
 
+To add a new Python version, update these files:
+
+- `tox.ini` - add the version to `envlist`
+- `pyproject.toml` - add a classifier
+- `.github/workflows/tests.yml` - add the version to the `run-tests` and `test-version` matrices
+- `README.md` - add a changelog entry
+
 ## Changelog
 
 We automatically release the versions that only update dependencies.
 If the version you installed does not show up here, only the dependencies
 have been updated.
+
+- v0.4.38
+
+  - Test and support Python 3.14. See [Issue 9](https://github.com/niccokunzmann/ics-query/issues/9).
 
 - v0.4.37
 
