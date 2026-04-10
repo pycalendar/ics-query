@@ -17,6 +17,22 @@ You can install this package from the [PyPI].
 pip install ics-query
 ```
 
+If you want `ics-query` available as a standalone command without affecting your
+system Python environment, use [pipx]:
+
+```shell
+pipx install ics-query
+```
+
+[pipx] installs the tool in an isolated virtual environment and puts the
+`ics-query` binary on your PATH automatically.
+If you do not have pipx yet, install it first:
+
+```shell
+pip install pipx
+pipx ensurepath
+```
+
 For **Windows**, you can download `ics-query.exe` from our [Releases].  
 For **Linux**, you can download `ics-query` from our [Releases].  
 For **MacOS**, you can use brew:
@@ -585,3 +601,4 @@ Examples:
 [GitHub Sponsors]: https://github.com/sponsors/niccokunzmann
 [thanks.dev]: https://thanks.dev
 [Releases]: https://github.com/niccokunzmann/ics-query/releases
+[pipx]: https://pipx.pypa.io
