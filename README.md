@@ -13,9 +13,13 @@ Find out what happens in ICS calendar files - query and filter RFC 5545 compatib
 
 You can install this package from the [PyPI].
 
+### Install with `pip
+
 ```shell
 pip install ics-query
 ```
+
+### Install with `pipx`
 
 If you want `ics-query` available as a standalone command without affecting your
 system Python environment, use [pipx]:
@@ -33,8 +37,13 @@ pip install pipx
 pipx ensurepath
 ```
 
+### Download binaries
+
 For **Windows**, you can download `ics-query.exe` from our [Releases].  
 For **Linux**, you can download `ics-query` from our [Releases].  
+
+### Install with Homebrew on MacOS
+
 For **MacOS**, you can use brew:
 
 ```shell
@@ -561,6 +570,7 @@ have been updated.
 - [icalBuddy](https://hasseg.org/icalBuddy/)
 - [Blog Post](https://opencollective.com/open-web-calendar/updates/calendar-calculation-on-the-command-line-ics-query)
 - [#icsquery on mastodon](https://toot.wales/tags/icsquery)
+- [Homebrew tap for ics-query](https://github.com/niccokunzmann/homebrew-tap)
 
 ## Vision
 
