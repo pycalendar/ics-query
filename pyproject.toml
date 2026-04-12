@@ -70,7 +70,7 @@ Homepage = "https://github.com/niccokunzmann/ics-query/"
 Repository = "https://github.com/niccokunzmann/ics-query/"
 source_archive = "https://github.com/niccokunzmann/ics-query/archive/{commit_hash}.zip"
 Issues = "https://github.com/niccokunzmann/ics-query/issues"
-Documentation = "https://github.com/niccokunzmann/ics-query/"
+Documentation = "https://ics-query.readthedocs.io/"
 Changelog = "https://github.com/niccokunzmann/ics-query/#changelog"
 
 [tool.hatch.version]
