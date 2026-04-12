@@ -40,7 +40,7 @@ pipx ensurepath
 ### Download binaries
 
 For **Windows**, you can download `ics-query.exe` from our [Releases].  
-For **Linux**, you can download `ics-query` from our [Releases].  
+For **Linux** (x86_64), you can download `ics-query-linux-x86_64` from our [Releases].  
 
 ### Install with Homebrew on MacOS
 
@@ -488,6 +488,10 @@ To add a new Python version, update these files:
 We automatically release the versions that only update dependencies.
 If the version you installed does not show up here, only the dependencies
 have been updated.
+
+- v0.5.8
+
+  - Name Linux binary by platform and architecture (e.g. `ics-query-linux-x86_64`). See [Issue 70](https://github.com/pycalendar/ics-query/issues/70).
 
 - v0.5.0
 
