@@ -120,6 +120,11 @@ extend-safe-fixes = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
+"docs/conf.py" = [
+    "A001",   # `copyright` is the required Sphinx variable name
+    "DTZ011", # datetime.date.today() is fine for a build-time year
+    "INP001", # conf.py is not part of a package
+]
 "ics_query/tests" = [
     "B011",   # Do not assert False (python -O removes these calls), raise AssertionError()
     "DTZ001", # datetime.datetime() called without a tzinfo argument
