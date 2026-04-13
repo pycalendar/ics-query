@@ -96,7 +96,7 @@ Each commit to `main` is automatically published with an increased patch version
 
 To release a new minor or major version:
 
-1. Edit the changelog section in `README.md`.
+1. Edit `CHANGELOG.md`.
 2. Create a commit and push it.
 3. Wait for [GitHub Actions](https://github.com/pycalendar/ics-query/actions) to finish.
 4. Create a tag and push it:
@@ -115,4 +115,5 @@ When a new Python version is released, update these files:
 - `tox.ini` — add the version to `envlist`
 - `pyproject.toml` — add a `Programming Language :: Python :: X.Y` classifier
 - `.github/workflows/tests.yml` — add the version to both the `run-tests` and `test-version` matrices
-- `README.md` — add a changelog entry
+- `.readthedocs.yml` — update the Python version if needed
+- `CHANGELOG.md` — add a changelog entry

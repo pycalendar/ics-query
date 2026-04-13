@@ -464,109 +464,29 @@ PATCH version number.
 To release a new version with a new MINOR or MAJOR version number change,
 follow these steps:
 
-1. edit the Changelog Section
-2. create a commit and push it
-3. wait for [GitHub Actions] to finish the build
-4. create a tag and push it
+1. Edit `CHANGELOG.md`.
+2. Create a commit and push it.
+3. Wait for [GitHub Actions](https://github.com/pycalendar/ics-query/actions) to finish.
+4. Create a tag and push it:
 
     ```shell
-    git tag v0.1.0
-    git push origin v0.1.0
+    git tag v0.2.0
+    git push origin v0.2.0
     ```
 
-5. Notify the issues about their release
+5. Notify the issues about their release.
 
 To add a new Python version, update these files:
 
 - `tox.ini` - add the version to `envlist`
 - `pyproject.toml` - add a classifier
 - `.github/workflows/tests.yml` - add the version to the `run-tests` and `test-version` matrices
-- `README.md` - add a changelog entry
+- `.readthedocs.yml` - update the Python version if needed
+- `CHANGELOG.md` - add a changelog entry
 
 ## Changelog
 
-We automatically release the versions that only update dependencies.
-If the version you installed does not show up here, only the dependencies
-have been updated.
-
-- v0.5.8
-
-  - Name Linux binary by platform and architecture (e.g. `ics-query-linux-x86_64`). See [Issue 70](https://github.com/pycalendar/ics-query/issues/70).
-
-- v0.5.0
-
-  - Remove Python 3.9 support.
-
-- v0.4.54
-
-  - Test and support Python 3.13 and 3.14. See [Issue 9](https://github.com/niccokunzmann/ics-query/issues/9).
-
-- v0.4.36
-
-  - Test and document `VALARM`. See [Issue 16](https://github.com/niccokunzmann/ics-query/issues/16).
-
-- v0.4.33
-
-  - Add `--as-calendar` parameter.
-
-- v0.4.32
-
-  - Update dependencies.
-  - Include recurrence ID in events to identify the occurrence in a series.
-  - Update help message in command line.
-
-- v0.4.1
-
-  - Automatic release with patch level version number increased
-  - Increase patch version instead of minor version for automatic releases
-
-- v0.3.4
-
-  - Update dependencies
-  - Start automatic release of dependencies increasing the version number
-
-- v0.3.3b
-
-  - Update dependencies
-
-- v0.3.2b
-
-  - Fix that `--tz localtime` would use `localtime` as timezone name instead of the local timezone name.
-  - Fix tests on Windows
-  - Add Windows .exe build artifact
-
-- v0.3.1b
-
-  - Add `--license` option
-
-- v0.3.0b
-
-  - Add `--tz` timezone parameter
-  - Add `ics-query all` to get all occurrences
-
-- v0.2.1a
-
-  - Add `--component` to filter component types VEVENT, VJOURNAL and VTODO
-
-- v0.2.0a
-
-  - Add `ics-query first <calendar> <output>` for earliest occurrences
-  - Add `ics-query between <span_start> <span_stop> <calendar> <output>` to query time ranges
-
-- v0.1.1a
-
-  - Add `--version`
-  - Add `ics-query at <date> <calendar> <output>`
-  - Add support for multiple calendars in one input
-
-- v0.1.0a
-
-  - Update Python version compatibility
-  - Add development documentation
-
-- v0.0.1a
-
-  - first version
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Related Work
 
