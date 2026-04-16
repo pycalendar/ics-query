@@ -3,6 +3,10 @@
 We automatically release versions that only update dependencies.
 If the version you installed does not show up here, only the dependencies have been updated.
 
+- v0.5.13
+
+  - Move documentation from `README.md` into the documentation website. See [Issue 87](https://github.com/pycalendar/ics-query/issues/87).
+
 - v0.5.12
 
   - Expand documentation with command reference, glossary, changelog, and timezone pages. Extract changelog into `CHANGELOG.md`. See [Issue 36](https://github.com/pycalendar/ics-query/issues/36).

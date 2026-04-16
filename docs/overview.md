@@ -40,6 +40,7 @@ Start is inclusive. End is exclusive.
 - [icalendar-events-cli](https://github.com/waldbaer/icalendar-events-cli#readme) — another command line implementation of `recurring-ical-events`
 - [icalBuddy](https://hasseg.org/icalBuddy/)
 - [Blog Post](https://opencollective.com/open-web-calendar/updates/calendar-calculation-on-the-command-line-ics-query)
+- [#icsquery on mastodon](https://toot.wales/tags/icsquery)
 - [Homebrew tap for ics-query](https://github.com/niccokunzmann/homebrew-tap)
 
 ## Planned features
@@ -52,6 +53,8 @@ Examples: `0,2,4` or `0-10`.
 **`--select-uid`** — Filter occurrences by UID.
 
 **Edit events** — Edit occurrences to produce new ICS files.
+
+**Notifications** — Use `ics-query` together with `cron` to get notified about upcoming events. For example: how many to-dos are in the next hour, how many events today, or a reminder to write a journal entry.
 
 [recurring-ical-events]: https://pypi.org/project/recurring-ical-events/
 [icalendar]: https://pypi.org/project/icalendar/
