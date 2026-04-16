@@ -9,8 +9,11 @@ release = version = importlib.metadata.version("ics-query")
 extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_copybutton",
+    "sphinx_design",
     "myst_parser",
 ]
+
+myst_enable_extensions = ["colon_fence"]
 
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
