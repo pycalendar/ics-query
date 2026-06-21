@@ -234,3 +234,43 @@ cat calendar1.ics calendar2.ics | ics-query at 2024-08 - -
 ```shell
 wget -qO- 'https://example.com/calendar.ics' | ics-query at 2024-08 - -
 ```
+
+## Working with jCal
+
+`ics-query` reads and writes iCalendar data in the RFC 5545 `.ics` format.
+If your workflow uses jCal JSON, convert between `.ics` and jCal with
+[`ical2jcal`](https://pypi.org/project/ical2jcal/). jCal is the JSON
+representation of iCalendar defined by
+[RFC 7265](https://www.rfc-editor.org/rfc/rfc7265).
+
+Install the converter:
+
+```shell
+python -m pip install ical2jcal
+```
+
+Convert an `.ics` file to jCal:
+
+```shell
+ical2jcal calendar.ics calendar.jcal
+```
+
+Convert jCal back to `.ics` before querying it:
+
+```shell
+jcal2ical calendar.jcal calendar.ics
+ics-query at 2024-08 calendar.ics -
+```
+
+You can also pipe the conversion into `ics-query`:
+
+```shell
+jcal2ical calendar.jcal - | ics-query between 2024-08-01 +7d - -
+```
+
+After querying, convert valid calendar output back to jCal:
+
+```shell
+ics-query at --as-calendar 2024-08 calendar.ics result.ics
+ical2jcal result.ics result.jcal
+```
