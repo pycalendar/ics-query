@@ -39,6 +39,7 @@ Start is inclusive. End is exclusive.
 
 - [icalendar-events-cli](https://github.com/waldbaer/icalendar-events-cli#readme) — another command line implementation of `recurring-ical-events`
 - [icalBuddy](https://hasseg.org/icalBuddy/)
+- [ical2jcal](https://pypi.org/project/ical2jcal/) — convert between iCalendar `.ics` files and RFC 7265 jCal JSON
 - [Blog Post](https://opencollective.com/open-web-calendar/updates/calendar-calculation-on-the-command-line-ics-query)
 - [#icsquery on mastodon](https://toot.wales/tags/icsquery)
 - [Homebrew tap for ics-query](https://github.com/niccokunzmann/homebrew-tap)
