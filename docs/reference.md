@@ -18,6 +18,20 @@ These options apply to all commands.
 | `--available-timezones` | List all available timezone names and exit. |
 | `--license` | Show the license and exit. |
 
+## jCal conversion
+
+`ics-query` accepts RFC 5545 iCalendar input. To use RFC 7265 jCal JSON,
+convert the file with [`ical2jcal`](https://pypi.org/project/ical2jcal/)
+before or after running `ics-query`.
+
+```shell
+ical2jcal calendar.ics calendar.jcal
+jcal2ical calendar.jcal calendar.ics
+```
+
+See the [ical2jcal documentation](https://pycalendar.github.io/ical2jcal/)
+for the full command reference.
+
 ## ics-query at
 
 ```
