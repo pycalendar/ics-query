@@ -421,6 +421,17 @@ def cli():
     (4) Do not mix `-c VEVENT` and others with `-c VALARM` or you might not know if the
     alarm or the component is inside the time span.
 
+    \b
+    jCal
+    ----
+
+    ics-query reads and writes RFC 5545 iCalendar data. To use RFC 7265 jCal JSON,
+    convert files with the ical2jcal package:
+
+    \b
+        https://pypi.org/project/ical2jcal/
+        https://pycalendar.github.io/ical2jcal/
+
     """  # noqa: D301
 
 
